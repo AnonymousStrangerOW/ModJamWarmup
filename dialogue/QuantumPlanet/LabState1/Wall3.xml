@@ -1,0 +1,14 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>SIGN</NameField> <!-- The name of this character -->
+	<DialogueNode>
+		<Name>Wall3</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>A submerged light sensor on the poison lake state is key to entering the lab on the thin-ice state. It is annoying to locate the sensor in its native state, but we cannot risk leaving the lab open all the time. Instead, we left scratches in the ice at the equivalent location in the current state. Placing a light-emitting marker there before changing states should make finding the sensor significantly easier.</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>QUANTUM_S1_LAB_TEXT3</FactID>
+			<FactID>QUANTUM_INT_R</FactID>
+		</RevealFacts>
+	</DialogueNode>
+</DialogueTree>

@@ -1,0 +1,13 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>SIGN</NameField> <!-- The name of this character -->
+	<DialogueNode>
+		<Name>1F_Wall</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>There was an old story about an electric hurricane on the Scientist's base planet. I bet it has similar properties to the hazardous water around this vortex. I'm sure I've also heard that you can set it down and walk away from it a decent amount of meters away.</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>CRIMSON_LAB_TEXT3</FactID>
+		</RevealFacts>
+	</DialogueNode>
+</DialogueTree>

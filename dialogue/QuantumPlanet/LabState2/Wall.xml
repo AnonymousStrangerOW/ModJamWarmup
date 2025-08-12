@@ -1,0 +1,13 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>SIGN</NameField> <!-- The name of this character -->
+	<DialogueNode>
+		<Name>Wall</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>According to our research, taking a photo of a quantum object has the potential to increase the object's weight. Interestingly, this phenomenon is completely disconnected from observation, and persists even after the object ceases to be observed or the photo is destroyed.</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>QUANTUM_S2_LAB_TEXT2</FactID>
+		</RevealFacts>
+	</DialogueNode>
+</DialogueTree>

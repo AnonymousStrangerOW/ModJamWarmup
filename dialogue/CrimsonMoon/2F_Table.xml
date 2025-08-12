@@ -1,0 +1,13 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>SIGN</NameField> <!-- The name of this character -->
+	<DialogueNode>
+		<Name>2F_Table</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>We have detected an alien anomaly in the now overgrown ice planet, likely inside its dimensions. We must prepare in case some horrifying beast tries to pose a threat to our homeworld. We must not lose it again!</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>VOLCANO_LAB_STRAT_TEXT3</FactID>
+		</RevealFacts>
+	</DialogueNode>
+</DialogueTree>

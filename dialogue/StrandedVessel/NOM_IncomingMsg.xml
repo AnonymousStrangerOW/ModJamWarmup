@@ -1,0 +1,32 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+	<TextBlock>
+		<ID>1</ID>
+		<Text>FUCHSIA: Hello? Agapanthus? Ixora? Are you guys okay?</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>2</ID>
+		<ParentID>1</ParentID>
+		<Text>GAILLARDIA: Did you not see the threatening transmission from their vessel? An alien species seemed to have murdered them!</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>3</ID>
+		<ParentID>2</ParentID>
+		<Text>FUCHSIA: Oh dear. In that case, put that solar neighborhood into a no-warp zone. First Escall, now Agapanthus! We must not risk losing any more Nomai!</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>4</ID>
+		<ParentID>3</ParentID>
+		<Text>GAILLARDIA: Does this mean we stop looking for Escall?</Text>
+	</TextBlock>
+	<TextBlock>
+		<ID>5</ID>
+		<ParentID>4</ParentID>
+		<Text>FUCHSIA: Of course it does! Escall's Clan might as well be dead too!</Text>
+	</TextBlock>
+	<ShipLogConditions>
+		<RevealFact>
+			<FactID>VESSEL_NOMSEARCH</FactID>
+			<Condition>4</Condition>
+		</RevealFact>
+	</ShipLogConditions>
+</NomaiObject>

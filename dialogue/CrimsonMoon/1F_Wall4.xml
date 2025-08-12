@@ -1,0 +1,13 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>SIGN</NameField> <!-- The name of this character -->
+	<DialogueNode>
+		<Name>1F_Wall4</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>This clock here lasts for 44 minutes, with each 11 minutes being a symbol.</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>VOLCANO_LAB_CLOCK_TEXT1</FactID>
+		</RevealFacts>
+	</DialogueNode>
+</DialogueTree>

@@ -1,0 +1,155 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>Pine</NameField>
+	<!-- The name of this character -->
+
+	<DialogueNode>
+		<!-- A dialogue node is a set of pages displayed to the player optionally followed by options -->
+		<Name>Crimson</Name>
+		<!-- The name of this node, used to go to this node from another node -->
+		<EntryCondition>DEFAULT</EntryCondition>
+		<!-- The condition that must be met for this node to be reached; A file should always have a node with "DEFAULT" -->
+		<Dialogue>
+			<!-- The actual dialogue we want to show the player -->
+			<Page>Surfing really brings me at peace...</Page>
+			<!-- A single page of the dialogue -->
+		</Dialogue>
+		<RevealFacts>
+			<FactID>CRIMSON_TRAVELER_E</FactID>
+		</RevealFacts>
+		<DialogueOptionsList>
+			<!-- Show options the player can choose from when the character is done talking -->
+			<DialogueOption>
+				<Text>Is there anything else to explore here?</Text>
+				<DialogueTarget>1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Do you know anything about this planet's moon?</Text>
+				<DialogueTarget>2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>You remind me of my friend Gabbro who's always calm and zen.</Text>
+				<DialogueTarget>3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Just saying hi.</Text>
+				<DialogueTarget>4</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- A dialogue node is a set of pages displayed to the player optionally followed by options -->
+		<Name>START</Name>
+		<Dialogue>
+			<Page>You going to get off my raft yet?</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<!-- Show options the player can choose from when the character is done talking -->
+			<DialogueOption>
+				<Text>Is there anything else to explore here?</Text>
+				<DialogueTarget>1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Do you know anything about this planet's moon?</Text>
+				<DialogueTarget>2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>You remind me of my friend Gabbro who's always calm and zen.</Text>
+				<DialogueTarget>3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Just saying hi.</Text>
+				<DialogueTarget>4</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>1</Name>
+		<Dialogue>
+			<Page>There's quite a few things actually, other than myself.</Page>
+			<Page>The water here's not safe to swim in, because it can shock you.</Page>
+			<Page>There's the tornadoes, which throw small objects in the air. They're annoying, but if you down thurst, you can actually fight back against its pull.</Page>
+			<Page>Aside from the dangers, there's my camp. There are two bases, one of which is next to my camp. I've never bothered to check either of them, though.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<RevealFacts>
+				<FactID>CRIMSON_CAMP_R</FactID>
+				<FactID>CRIMSON_BASE_R</FactID>
+				<FactID>CRIMSON_SPINLAB_R</FactID>
+			</RevealFacts>
+			<DialogueOption>
+				<Text>Alright, thanks!</Text>
+				<DialogueTarget>START</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>2</Name>
+		<Dialogue>
+			<Page>That crazy inferno? Never been, although I did hear there was another old base up there...</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>VOLCANO_BASE_R</FactID>
+		</RevealFacts>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>I'll take a look.</Text>
+				<DialogueTarget>START</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>VOLCANO_BASE_E</RequiredLogCondition>
+				<Text>I found the base! It was full-blown military base with bombs.</Text>
+				<DialogueTarget>2C</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>2C</Name>
+		<Dialogue>
+			<Page>A military base? Bombs? This must be why our program was shut down for millenia.</Page>
+		</Dialogue>
+		<DialogueTarget>START</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>3</Name>
+		<Dialogue>
+			<Page>I'm nothing like your friend Gabbro. I'm always so anxious, furious, and squirmy, so I have to take all my anger out by doing this.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Plus you're not trapped in a time loop with me....</Text>
+				<DialogueTarget>3A</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>3A</Name>
+		<Dialogue>
+			<Page>Time loop? What kind of nonsense are you talking about?</Page>
+		</Dialogue>
+		<DialogueOption>
+			<Text>*sigh* Nevermind...</Text>
+			<DialogueTarget>START</DialogueTarget>
+		</DialogueOption>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>4</Name>
+		<Dialogue>
+			<Page>Next time, don't bother me on my raft! I'm already mad about our star dying soon!</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

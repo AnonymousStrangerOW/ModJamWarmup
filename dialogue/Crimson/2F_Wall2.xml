@@ -1,0 +1,13 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>SIGN</NameField> <!-- The name of this character -->
+	<DialogueNode>
+		<Name>2F_Wall2</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Perhaps we are, and they're keeping it classified to keep us under control. Maybe it's best we follow their orders, to protect our homeworld.</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>CRIMSON_LAB_TEXT2</FactID>
+		</RevealFacts>
+	</DialogueNode>
+</DialogueTree>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.34929.205
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModJamWarmup", "ModJamWarmup.csproj", "{4D1194AF-45A6-4AF0-9329-6FE9D39DDCE5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug2|Any CPU = Debug2|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D1194AF-45A6-4AF0-9329-6FE9D39DDCE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D1194AF-45A6-4AF0-9329-6FE9D39DDCE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D1194AF-45A6-4AF0-9329-6FE9D39DDCE5}.Debug2|Any CPU.ActiveCfg = Debug2|Any CPU
+		{4D1194AF-45A6-4AF0-9329-6FE9D39DDCE5}.Debug2|Any CPU.Build.0 = Debug2|Any CPU
+		{4D1194AF-45A6-4AF0-9329-6FE9D39DDCE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D1194AF-45A6-4AF0-9329-6FE9D39DDCE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09306632-E0D2-4469-A5FC-C6EBE92AEBEF}
+	EndGlobalSection
+EndGlobal

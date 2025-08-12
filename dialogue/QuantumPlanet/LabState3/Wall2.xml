@@ -1,0 +1,13 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>SIGN</NameField> <!-- The name of this character -->
+	<DialogueNode>
+		<Name>Wall2</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Now that we know what this machine is capable of, we can let HQ know it's safe to interact with.</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>QUANTUM_S3_LAB_TEXT2</FactID>
+		</RevealFacts>
+	</DialogueNode>
+</DialogueTree>

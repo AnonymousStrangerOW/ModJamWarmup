@@ -1,0 +1,13 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>SIGN</NameField> <!-- The name of this character -->
+	<DialogueNode>
+		<Name>1F_Wall2</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>NOTICE: The seal will be burned when the lava's tide rises. Luckily, this won't happen until ring time around the last minutes before our star dies in case we need it again.</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>VOLCANO_LAB_NOVA_TEXT2</FactID>
+		</RevealFacts>
+	</DialogueNode>
+</DialogueTree>

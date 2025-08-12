@@ -1,0 +1,25 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "DREAMWORLD",
+	"starSystem": "SolarSystem",
+	"Props": {
+		"details": [
+			{
+				"assetBundle": "assets/AssetBundle/prisonerhouse",
+				"path": "Assets/PrisonerHouse.prefab",
+				"parentPath": "Sector_DreamWorld/Sector_DreamZone_2/Structure_DreamZone_2/LowerLevel",
+				"isRelativeToParent": true,
+				"position": {
+					"x": 29.03,
+					"y": 1.05,
+					"z": -107.22
+				},
+				"rotation": {
+					"x": -180,
+					"y": -1.522836,
+					"z": 180
+				}
+			}
+		]
+	}
+}

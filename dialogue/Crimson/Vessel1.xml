@@ -1,0 +1,13 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>SIGN</NameField> <!-- The name of this character -->
+	<DialogueNode>
+		<Name>Vessel1</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>The enemy behind the anomaly has finally shown its face! A massive white ship capable of warp technology has warped to our system.</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>CRIMSON_SPINLAB_VES_TEXT1</FactID>
+		</RevealFacts>
+	</DialogueNode>
+</DialogueTree>

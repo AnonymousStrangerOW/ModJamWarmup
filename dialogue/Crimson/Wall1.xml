@@ -1,0 +1,13 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>Wall1</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>If Operation Phoenix succeeds, we must put a cloak on the ship so that no one finds it. Is that clear?</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>CRIMSON_SPINLAB_TEXT1</FactID>
+		</RevealFacts>
+	</DialogueNode>
+</DialogueTree>

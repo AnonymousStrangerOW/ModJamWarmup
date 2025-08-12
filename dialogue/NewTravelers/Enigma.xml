@@ -1,0 +1,176 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>Bark</NameField>
+	<!-- The name of this character -->
+
+	<DialogueNode>
+		<!-- A dialogue node is a set of pages displayed to the player optionally followed by options -->
+		<Name>Enigma</Name>
+		<!-- The name of this node, used to go to this node from another node -->
+		<EntryCondition>DEFAULT</EntryCondition>
+		<!-- The condition that must be met for this node to be reached; A file should always have a node with "DEFAULT" -->
+		<Dialogue>
+			<!-- The actual dialogue we want to show the player -->
+			<Page>C-c-cold....s-s-star death....m-m-must nnot...die...</Page>
+			<!-- A single page of the dialogue -->
+		</Dialogue>
+		<RevealFacts>
+			<FactID>QUANTUM_TRAVELER_E</FactID>
+		</RevealFacts>
+		<DialogueOptionsList>
+			<!-- Show options the player can choose from when the character is done talking -->
+			<DialogueOption>
+				<Text>Do you need me to take you home?</Text>
+				<DialogueTarget>1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Do you know anything about this planet?</Text>
+				<DialogueTarget>2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>You remind me of my friend Chert who was afraid of our star dying.</Text>
+				<DialogueTarget>3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>QUANTUM_S1_LAB_TEXT4</RequiredLogCondition>
+				<Text>Do you know how to find the scratch?</Text>
+				<DialogueTarget>SCRATCH</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>QUANTUM_S1_LAB_TEXT4</RequiredLogCondition>
+				<Text>Do you know how to find the crack?</Text>
+				<DialogueTarget>CRACK</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Just saying hi.</Text>
+				<DialogueTarget>4</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- A dialogue node is a set of pages displayed to the player optionally followed by options -->
+		<Name>START</Name>
+		<Dialogue>
+			<Page>C-c-cold....a-anything else?</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<!-- Show options the player can choose from when the character is done talking -->
+			<DialogueOption>
+				<Text>Do you need me to take you home?</Text>
+				<DialogueTarget>1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Do you know anything about this planet?</Text>
+				<DialogueTarget>2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>You remind me of my friend Chert who was afraid of our star dying.</Text>
+				<DialogueTarget>3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>QUANTUM_S1_LAB_TEXT4</RequiredLogCondition>
+				<Text>Do you know how to find the scratch?</Text>
+				<DialogueTarget>SCRATCH</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>QUANTUM_S1_LAB_TEXT4</RequiredLogCondition>
+				<Text>Do you know how to find the crack?</Text>
+				<DialogueTarget>CRACK</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Just saying hi.</Text>
+				<DialogueTarget>4</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>1</Name>
+		<Dialogue>
+			<Page>C-c-can't! Am st-stuck here...</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Well, if you say so...</Text>
+				<DialogueTarget>START</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>You remind me of my friend Solanum, who was trapped on a quantum body like this.</Text>
+				<DialogueTarget>SOL</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>2</Name>
+		<Dialogue>
+			<Page>Th-th-three states. I am one of th-third. All three c-c-connected.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>OK then....</Text>
+				<DialogueTarget>START</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>You remind me of my friend Solanum, who was trapped on a quantum body like this.</Text>
+				<DialogueTarget>SOL</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>SOL</Name>
+		<Dialogue>
+			<Page>Sol-solanum? N-not like S-s-solanum either...I c-c-can leave if I want, b-b-but I'm f-f-frozen so it's hard to m-move.</Page>
+		</Dialogue>
+		<DialogueTarget>START</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>CRACK</Name>
+		<Dialogue>
+			<Page>C-c-c-c-crack?</Page>
+			<Page>B-b-b-by my ship! Near the Lab, C-c-cold!</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>QUANTUM_CRACK_R2</FactID>
+		</RevealFacts>
+		<DialogueTarget>START</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>SCRATCH</Name>
+		<Dialogue>
+			<Page>Sc-sc-sc-scratch?</Page>
+			<Page>Brrr! Ab-b-bout 120 m-m-m-meters s-s-s-south of the lab! It's s-s-sitting by a lantern, C-c-cold!</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>QUANTUM_SCRATCH_R2</FactID>
+		</RevealFacts>
+		<DialogueTarget>START</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>3</Name>
+		<Dialogue>
+			<Page>Ch-ch-Chert? Do n-n-not fear s-s-star death, b-but can't move. I'm not Ch-chert.</Page>
+		</Dialogue>
+		<DialogueTarget>START</DialogueTarget>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>4</Name>
+		<Dialogue>
+			<Page>F-f-f-f-farewell!!!</Page>
+		</Dialogue>
+	</DialogueNode>
+</DialogueTree>

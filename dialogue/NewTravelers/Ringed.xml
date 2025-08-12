@@ -1,0 +1,231 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+ <NameField>Bush</NameField> <!-- The name of this character -->
+
+ <DialogueNode> <!-- A dialogue node is a set of pages displayed to the player optionally followed by options -->
+  <Name>Ringed</Name> <!-- The name of this node, used to go to this node from another node -->
+  <EntryCondition>DEFAULT</EntryCondition> <!-- The condition that must be met for this node to be reached; A file should always have a node with "DEFAULT" -->
+  <Dialogue> <!-- The actual dialogue we want to show the player -->
+      <Page>This technology is fascinating...</Page> <!-- A single page of the dialogue -->
+  </Dialogue>
+	 <RevealFacts>
+		 <FactID>RING_TRAVELER_E</FactID>
+	 </RevealFacts>
+  <DialogueOptionsList> <!-- Show options the player can choose from when the character is done talking -->
+	<DialogueOption>
+		  <Text>Is there anything else to explore here?</Text>
+		  <DialogueTarget>1</DialogueTarget>
+	</DialogueOption>
+   <DialogueOption>
+    <Text>Do you know what it does?</Text>
+    <DialogueTarget>2</DialogueTarget>
+   </DialogueOption>
+	<DialogueOption>
+		  <Text>You remind me of my friend Riebeck who loves ancient architecture.</Text>
+		  <DialogueTarget>3</DialogueTarget>
+	</DialogueOption>
+    <DialogueOption>
+		<Text>Just saying hi.</Text>
+		<DialogueTarget>4</DialogueTarget>
+   </DialogueOption>
+  </DialogueOptionsList>
+ </DialogueNode>
+
+	<DialogueNode>
+		<!-- A dialogue node is a set of pages displayed to the player optionally followed by options -->
+		<Name>START</Name>
+		<Dialogue>
+			<Page>Anything else you want to tell me?</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<!-- Show options the player can choose from when the character is done talking -->
+			<DialogueOption>
+				<Text>Is there anything else to explore here?</Text>
+				<DialogueTarget>1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Do you know what it does?</Text>
+				<DialogueTarget>2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>You remind me of my friend Riebeck who loves ancient architecture.</Text>
+				<DialogueTarget>3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Just saying hi.</Text>
+				<DialogueTarget>4</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+<DialogueNode> <!-- Another node why not -->
+  <Name>1</Name>
+  <Dialogue>
+   <Page>Not much on or below the surface, no. I do have a camp south of here, but it's just a tent, some things i found, and a campfire.</Page>
+   <Page>There is however a space station floating just above the planet. Since our home got terraformed, it's just been abandoned.</Page>
+  </Dialogue>
+	<RevealFacts>
+		<FactID>RING_TRAVELER_INFO</FactID>
+	</RevealFacts>
+  <DialogueOptionsList>
+  <DialogueOption>
+    <Text>I've been there, that's where I came from.</Text>
+    <DialogueTarget>1A</DialogueTarget>
+   </DialogueOption>
+   </DialogueOptionsList> 
+ </DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>1A</Name>
+		<Dialogue>
+			<Page>You have? What was in there? How did you get in? i thought the place was sealed off!</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>I went through a few of those treacherous Bramble Dimensions after discovering it in my home system.</Text>
+				<DialogueTarget>1B</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>1B</Name>
+		<Dialogue>
+			<Page>Hmmm...so the only way in is to go through those "Bramble Dimensions" you say?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Yes, and watch out for Quantum Anglerfish!</Text>
+				<DialogueTarget>1C</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>1C</Name>
+		<Dialogue>
+			<Page>Alright. I'll give it a shot! I fear no fish!</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Good luck...</Text>
+				<DialogueTarget>START</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+ <DialogueNode> <!-- Another node why not -->
+  <Name>2</Name>
+  <Dialogue>
+   <Page>I do not, and you can probably tell by my curiosity. I've never seen anything like this before, but it looks like something our ancestors built.</Page>
+  </Dialogue>
+	 <DialogueOptionsList>
+		 <DialogueOption>
+			 <Text>What's your theory on this place?</Text>
+			 <DialogueTarget>2B</DialogueTarget>
+		 </DialogueOption>
+	 </DialogueOptionsList>
+ </DialogueNode>
+
+  <DialogueNode> <!-- Another node why not -->
+  <Name>2B</Name>
+  <Dialogue>
+   <Page>The only thing I can make of it, is that it's some sort of machine with sockets. The symbols on them might be where to find them...</Page>
+  </Dialogue>
+	  <DialogueOptionsList>
+		  <DialogueOption>
+			  <Text>I'll let you know if I find anything.</Text>
+			  <DialogueTarget>START</DialogueTarget>
+		  </DialogueOption>
+		  <DialogueOption>
+			  <RequiredLogCondition>RING_SEAL_E</RequiredLogCondition>
+			  <Text>I found the seal! It was right by your camp.</Text>
+			  <DialogueTarget>2C</DialogueTarget>
+		  </DialogueOption>
+	  </DialogueOptionsList>
+ </DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>2C</Name>
+		<Dialogue>
+			<Page>So THAT'S what that thing was...I found that thing the other day, but when I found this structure today, I completely forgot about that slab you found.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<RequiredLogCondition>RING_SEAL_INSERT</RequiredLogCondition>
+				<Text>And a hologram symbol shows up when I insert it.</Text>
+				<DialogueTarget>2D</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>2D</Name>
+		<Dialogue>
+			<Page>I have no idea what it could mean. We use those symbols for a lot of things. Maybe it'll be clearer if you find the rest.</Page>
+		</Dialogue>
+		<DialogueTarget>START</DialogueTarget>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>3</Name>
+		<Dialogue>
+			<Page>Me? Pfft, no I don't care about architecture. Actually, at home I'm known as my kind's demolition expert.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>You sound fascinated with the structure in front of you...</Text>
+				<DialogueTarget>3A</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>I think your star will beat you to that soon...</Text>
+				<DialogueTarget>3B</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>3A</Name>
+		<Dialogue>
+			<Page>Sure, but not because I am fascinated with architecture, but because you don't see this every day.</Page>
+			<Page>To be fair, wouldn't this make just anyone's brain start ticking?</Page>
+		</Dialogue>
+		<DialogueOption>
+			<Text>Yeah, fair enough.</Text>
+			<DialogueTarget>START</DialogueTarget>
+		</DialogueOption>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>4</Name>
+		<Dialogue>
+			<Page>Well little guy, let me know if you figure anything out.</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>I will!</Text>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>3B</Name>
+		<Dialogue>
+			<Page>Oh yeah? Well I know and I don't care!</Page>
+		</Dialogue>
+		<DialogueOption>
+			<Text>(This one's just like the rest of them...)</Text>
+			<DialogueTarget>START</DialogueTarget>
+		</DialogueOption>
+	</DialogueNode>
+ </DialogueTree>

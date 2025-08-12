@@ -1,0 +1,17 @@
+{
+	"$schema": "https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/body_schema.json",
+	"name": "Player",
+	"starSystem": "SolarSystem",
+	"Props": {
+		"details": [
+			{
+				"assetBundle": "assets/AssetBundle/newprototype",
+				"path": "Assets/NewPrototypeObject.prefab"
+			},
+			{
+				"assetBundle": "assets/AssetBundle/timeviewhandler",
+				"path": "Assets/TimeViewHandler.prefab"
+			}
+		]
+	}
+}

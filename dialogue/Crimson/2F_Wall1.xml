@@ -1,0 +1,13 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>SIGN</NameField> <!-- The name of this character -->
+	<DialogueNode>
+		<Name>2F_Wall1</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>The Defense Ministry has ordered us to extract the electric fluid for their weapons. Why do we even need weapons? Are we really in danger?</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>CRIMSON_LAB_TEXT1</FactID>
+		</RevealFacts>
+	</DialogueNode>
+</DialogueTree>

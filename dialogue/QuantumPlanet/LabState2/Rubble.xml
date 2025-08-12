@@ -1,0 +1,13 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>SIGN</NameField> <!-- The name of this character -->
+	<DialogueNode>
+		<Name>Rubble</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>ALERT! ALERT! WE'VE BEEN SPOTTED! DESTROY IT! MOVE ALL OPERATIONS TO THE VOLCANIC MOON!</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>QUANTUM_S2_LAB_TEXT</FactID>
+		</RevealFacts>
+	</DialogueNode>
+</DialogueTree>

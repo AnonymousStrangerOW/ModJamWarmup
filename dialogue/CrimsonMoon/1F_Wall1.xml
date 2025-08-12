@@ -1,0 +1,13 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>SIGN</NameField> <!-- The name of this character -->
+	<DialogueNode>
+		<Name>1F_Wall1</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>We still have quite a long while until our star dies, maybe another 281,083 years. But when it does, the desert planet will lose its atmosphere when the clock hits star.</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>VOLCANO_LAB_NOVA_TEXT1</FactID>
+		</RevealFacts>
+	</DialogueNode>
+</DialogueTree>

@@ -1,0 +1,214 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>Arcadia</NameField>
+	<!-- The name of this character -->
+
+	<DialogueNode>
+		<!-- A dialogue node is a set of pages displayed to the player optionally followed by options -->
+		<Name>Desert</Name>
+		<!-- The name of this node, used to go to this node from another node -->
+		<EntryCondition>DEFAULT</EntryCondition>
+		<!-- The condition that must be met for this node to be reached; A file should always have a node with "DEFAULT" -->
+		<Dialogue>
+			<!-- The actual dialogue we want to show the player -->
+			<Page>Hey, on the bright side, that crash wasn't cool enough...</Page>
+			<!-- A single page of the dialogue -->
+		</Dialogue>
+		<RevealFacts>
+			<FactID>DESERT_TRAVELER_E</FactID>
+		</RevealFacts>
+		<DialogueOptionsList>
+			<!-- Show options the player can choose from when the character is done talking -->
+			<DialogueOption>
+				<Text>What can I do here?</Text>
+				<DialogueTarget>1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>DESERT_MAIN_ATMO</RequiredLogCondition>
+				<Text>The atmosphere of this planet will be stripped off in just 23 minutes!</Text>
+				<DialogueTarget>2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>You remind me of my friend Feldspar who can take on anything.</Text>
+				<DialogueTarget>3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Just saying hi.</Text>
+				<DialogueTarget>4</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- A dialogue node is a set of pages displayed to the player optionally followed by options -->
+		<Name>START</Name>
+		<Dialogue>
+			<Page>Anything else you want to tell me?</Page>
+		</Dialogue>
+
+		<DialogueOptionsList>
+			<!-- Show options the player can choose from when the character is done talking -->
+			<DialogueOption>
+				<Text>What can I do here?</Text>
+				<DialogueTarget>1</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<RequiredLogCondition>DESERT_MAIN_ATMO</RequiredLogCondition>
+				<Text>The atmosphere of this planet will be stripped off in just 23 minutes!</Text>
+				<DialogueTarget>2</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>You remind me of my friend Feldspar who can take on anything.</Text>
+				<DialogueTarget>3</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Just saying hi.</Text>
+				<DialogueTarget>4</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>1</Name>
+		<Dialogue>
+			<Page>I don't know, this place is pretty boring, there's not even an old lab like the other planets have.</Page>
+			<Page>Oh yeah, anything past that equator is fatal! You will burn to death on the sun-facing side!</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>DESERT_TRAVELER_INFO</FactID>
+		</RevealFacts>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Good to know.</Text>
+				<DialogueTarget>START</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>How can I get over to the sun-facing side without dying?</Text>
+				<DialogueTarget>1A</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>1A</Name>
+		<Dialogue>
+			<Page>Are you serious? There is no way over there! Besides, there's nothing over there! What could you possibly want there?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>I don't know, but I want to explore there badly!</Text>
+				<DialogueTarget>1B</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>1B</Name>
+		<Dialogue>
+			<Page>Well if you go down there and die, don't say I didn't warn you!</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Alright, alright! I get it! You're scared!</Text>
+				<DialogueTarget>START</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>2</Name>
+		<Dialogue>
+			<Page>Wh-wh-WHAT???? I gotta get out of here but my ship's not intact!</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Come with me in my ship.</Text>
+				<DialogueTarget>2B</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Not my problem.</Text>
+				<DialogueTarget>START</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>2B</Name>
+		<Dialogue>
+			<Page>That grimey old thing strapped together in duct tape? Absolutely not! And how should I trust you?</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>B-but I- *sigh* Fine.</Text>
+				<DialogueTarget>START</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+	
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>3</Name>
+		<Dialogue>
+			<Page>I wish that was true because I am SCARED TO DEATH right now.</Page>
+			<Page>I am afraid of literally everything you can think of!</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>Then what are you doing in space?</Text>
+				<DialogueTarget>3A</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Then why did you say the ship crash wasn't cool enough? That's a classic Feldspar line!</Text>
+				<DialogueTarget>3B</DialogueTarget>
+			</DialogueOption>
+			<DialogueOption>
+				<Text>Oh OK.</Text>
+				<DialogueTarget>START</DialogueTarget>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>3A</Name>
+		<Dialogue>
+			<Page>I-I-I don't know! I'm afraid of large groups, so I just...took off and left.</Page>
+			<Page>I want to be alone, but this place still gives me the creeps!</Page>
+		</Dialogue>
+		<DialogueOption>
+			<Text>Yeah, fair enough.</Text>
+			<DialogueTarget>START</DialogueTarget>
+		</DialogueOption>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>4</Name>
+		<Dialogue>
+			<Page>OK, don't let me find you dead on the equator!</Page>
+		</Dialogue>
+		<DialogueOptionsList>
+			<DialogueOption>
+				<Text>(I can't promise that)</Text>
+			</DialogueOption>
+		</DialogueOptionsList>
+	</DialogueNode>
+
+	<DialogueNode>
+		<!-- Another node why not -->
+		<Name>3B</Name>
+		<Dialogue>
+			<Page>This "Feldspar" you speak of actually says that all the time? Haha! That's quite a coincidence.</Page>
+			<Page>Honestly, I just said that as a coping mechanism, despite those never work for me.</Page>
+		</Dialogue>
+		<DialogueOption>
+			<Text>Yeah, fair enough.</Text>
+			<DialogueTarget>START</DialogueTarget>
+		</DialogueOption>
+	</DialogueNode>
+</DialogueTree>

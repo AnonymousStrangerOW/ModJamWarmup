@@ -1,0 +1,13 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>SIGN</NameField>
+	<DialogueNode>
+		<Name>Signal</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>NOTE: To find the white ship, use the gear interface to activate a signal and follow it.</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>CRIMSON_SPINLAB_TEXT2</FactID>
+		</RevealFacts>
+	</DialogueNode>
+</DialogueTree>

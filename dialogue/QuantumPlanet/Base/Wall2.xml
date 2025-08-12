@@ -1,0 +1,13 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>SIGN</NameField> <!-- The name of this character -->
+	<DialogueNode>
+		<Name>Wall2</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>Our biometrics system makes no distinction between a living face and a deceased skull. Unfortunately, this flaw cannot be fixed, so we must take extra care to avoid being captured, dead or alive.</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>QUANTUM_BASE_TEXT2</FactID>
+		</RevealFacts>
+	</DialogueNode>
+</DialogueTree>

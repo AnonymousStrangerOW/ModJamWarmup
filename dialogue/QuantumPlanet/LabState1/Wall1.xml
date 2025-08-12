@@ -1,0 +1,13 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>SIGN</NameField> <!-- The name of this character -->
+	<DialogueNode>
+		<Name>Wall1</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>We've discovered that this planet is actually a convergence point where three timelines meet. As such, the three versions of this planet are not just states, but fragments of entirely different relities. After changing states using the stalls we built, we found alternate versions of this very laboratory. Could our actions here have affected these alternate timelines?</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>QUANTUM_S1_LAB_TEXT1</FactID>
+		</RevealFacts>
+	</DialogueNode>
+</DialogueTree>

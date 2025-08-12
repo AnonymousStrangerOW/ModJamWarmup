@@ -1,0 +1,13 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>SIGN</NameField> <!-- The name of this character -->
+	<DialogueNode>
+		<Name>Wall4</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>There is a crack in the ice not far from the lab, caused by a heavy object. The ice on this state is too thick to break, but we predict that shattering the ice on a different state may be possible due to the interconnected nature of the states, provided enough weight is added.</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>QUANTUM_S1_LAB_TEXT4</FactID>
+		</RevealFacts>
+	</DialogueNode>
+</DialogueTree>

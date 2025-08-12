@@ -1,0 +1,13 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+	<NameField>SIGN</NameField> <!-- The name of this character -->
+	<DialogueNode>
+		<Name>2F_Wall1</Name>
+		<EntryCondition>DEFAULT</EntryCondition>
+		<Dialogue>
+			<Page>In order to respond to anomalies like the one that just happened, today I announce the founding of the Ministry of Defense!</Page>
+		</Dialogue>
+		<RevealFacts>
+			<FactID>VOLCANO_LAB_STRAT_TEXT1</FactID>
+		</RevealFacts>
+	</DialogueNode>
+</DialogueTree>
