@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright © 2025 Anonymous")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9b594121b4068cfb00524b15091cc1af099a3ab")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90dfc3dd96c28a0d116b69c9849057c2f244b748")]
 [assembly: System.Reflection.AssemblyProductAttribute("ModJamWarmup")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ModJamWarmup")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
