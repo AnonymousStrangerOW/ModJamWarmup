@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{4D1194AF-45A6-4AF0-9329-6FE9D39DDCE5}|ModJamWarmup.csproj|solutionrelative:modjamwarmup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D1194AF-45A6-4AF0-9329-6FE9D39DDCE5}|ModJamWarmup.csproj|c:\\users\\jn7jn\\source\\repos\\modjamwarmup\\newprototype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D1194AF-45A6-4AF0-9329-6FE9D39DDCE5}|ModJamWarmup.csproj|solutionrelative:newprototype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4D1194AF-45A6-4AF0-9329-6FE9D39DDCE5}|ModJamWarmup.csproj|c:\\users\\jn7jn\\source\\repos\\modjamwarmup\\timevision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D1194AF-45A6-4AF0-9329-6FE9D39DDCE5}|ModJamWarmup.csproj|solutionrelative:timevision.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D1194AF-45A6-4AF0-9329-6FE9D39DDCE5}|ModJamWarmup.csproj|c:\\users\\jn7jn\\source\\repos\\modjamwarmup\\newprototype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D1194AF-45A6-4AF0-9329-6FE9D39DDCE5}|ModJamWarmup.csproj|solutionrelative:newprototype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D1194AF-45A6-4AF0-9329-6FE9D39DDCE5}|ModJamWarmup.csproj|c:\\users\\jn7jn\\source\\repos\\modjamwarmup\\modjamwarmup.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -46,8 +46,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 6,
@@ -72,14 +76,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "TimeVision.cs",
               "DocumentMoniker": "C:\\Users\\jn7jn\\source\\repos\\ModJamWarmup\\TimeVision.cs",
               "RelativeDocumentMoniker": "TimeVision.cs",
               "ToolTip": "C:\\Users\\jn7jn\\source\\repos\\ModJamWarmup\\TimeVision.cs",
               "RelativeToolTip": "TimeVision.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T02:32:46.221Z"
+              "WhenOpened": "2025-07-01T02:32:46.221Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -101,7 +106,8 @@
               "ToolTip": "C:\\Users\\jn7jn\\source\\repos\\ModJamWarmup\\ModJamWarmup.cs",
               "RelativeToolTip": "ModJamWarmup.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T16:28:52.001Z"
+              "WhenOpened": "2025-06-28T16:28:52.001Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -116,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "NewPrototype.cs",
               "DocumentMoniker": "C:\\Users\\jn7jn\\source\\repos\\ModJamWarmup\\NewPrototype.cs",
               "RelativeDocumentMoniker": "NewPrototype.cs",
